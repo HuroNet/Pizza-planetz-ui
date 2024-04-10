@@ -1,6 +1,6 @@
 
 
-fetch('http://127.0.0.1:5000/ingredient')
+fetch('http://127.0.0.1:5000/beverage')
     .then(response => response.json())
     .then(beverages => {
         let rows = beverages.map(element => createIngredientTemplate(element));
